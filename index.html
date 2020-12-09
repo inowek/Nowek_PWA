@@ -73,7 +73,7 @@
     <div class="footer"><p>Igor Nowek 4E - PWA</p></div>
 </footer>
 <script>
-    if (serviceWorker in navigator) {
+    if (`serviceWorker in navigator`) {
         navigator.serviceWorker
             .register(`service-worker.js`)
             .then((registration) => {
