@@ -1,0 +1,47 @@
+{
+  "short_name": "PWA",
+  "name": "Progressive Web App",
+  "description": "Opis działania aplikacji PWA",
+  "icons": [
+    {
+      "src": "ikonki/16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "ikonki/32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "ikonki/64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "ikonki/128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "ikonki/256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "ikonki/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "ikonki/1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#cccccc",
+  "theme_color": "#ffaaaa",
+  "display": "standalone",
+  "scope": "./"
+}

@@ -1,0 +1,90 @@
+<DOCTYPE HTML>
+<html>
+<head> 
+
+<meta charset="UTF-8"/>
+<title>Kafelki</title>
+<link rel="stylesheet" href="style/style.css" type="text/css"/>
+<link rel="manifest" href="manifest.json">
+</head>
+<div>
+<section>
+    <nav>
+        <ul>
+            <li><a href="link">Opcja 1</a></li>
+            <li><a href="link">Opcja 2</a></li>
+            <li><a href="link">Opcja 3</a></li>
+            <li><a href="link">Opcja 4</a></li>
+    </nav>
+</section>
+</div>
+<div>
+</br>
+<header><img src="ikonki/256x256.png"/></header>
+</br>
+</div>
+<body onload="odliczanie();">
+<div id="zegar"></div>
+<script>
+    function odliczanie()
+    {
+        var dzisiaj = new Date();
+
+        var dzien = dzisiaj.getDate();
+        var miesiac = dzisiaj.getMonth()+1;
+        var rok = dzisiaj.getFullYear();
+
+        var godzina = dzisiaj.getHours();
+        if (godzina<10) godzina = "0"+godzina;
+
+        var minuta = dzisiaj.getMinutes();
+        if (minuta<10) minuta = "0"+minuta;
+
+        var sekunda = dzisiaj.getSeconds();
+        if (sekunda<10) sekunda = "0"+sekunda;
+
+        document.getElementById("zegar").innerHTML =
+            dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda;
+
+        setTimeout("odliczanie()",1000);
+    }
+</script>
+<br>
+<div class="informacja">
+    <b>Część informacyjna:</b>
+</br>
+    <b> Klasa: 4E</b>
+</br>
+    <b> Numer w dzienniku: 17</b>
+</br>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<footer>
+    <div class="footer"><p>Igor Nowek 4E - PWA</p></div>
+</footer>
+<script>
+    if (serviceWorker in navigator) {
+        navigator.serviceWorker
+            .register(service-worker.js)
+            .then((registration) => {
+                console.log(ServiceWorker registration successful with scope: , registration.scope);
+            })
+            .catch((err) => {
+                console.log(ServiceWorker registration failed: , err);
+            });
+    }
+</script>
+
+</body>
+
+</html>
